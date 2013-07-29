@@ -14,12 +14,15 @@
 
 	<distributionManagement>
 		<repository>
-			<id>nexus</id>
+			<id>workdocx-nexus-snapshots</id>
 			<name>Nexus Releases</name>
-			<url>http://192.168.4.2:8081/nexus/content/repositories/thirdparty</url>
+			<url>http://192.168.4.2:8081/nexus/content/repositories/releases</url>
 		</repository>
-		<!-- snapshotRepository> <id>nexus</id> <name>Nexus Snapshots</name> <url>http://192.168.4.2:8081/nexus/content/repositories/thirdparty</url> 
-			</snapshotRepository -->
+		<snapshotRepository>
+			<id>workdocx-nexus-release</id>
+			<name>Nexus Snapshots</name>
+			<url>http://192.168.4.2:8081/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<repositories>
