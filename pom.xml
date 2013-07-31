@@ -3,9 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.jirasystems</groupId>
 	<artifactId>cheep-orm</artifactId>
-	<name>Simple ORM</name>
+	<name>Cheep ORM</name>
 	<version>0.1.6</version>
-	<description>Simple object-relational mapping system.</description>
+	<description>Object-row mapping.</description>
 	<url>http://jirasystems.net</url>
 
 	<properties>
@@ -24,14 +24,6 @@
 			<url>http://192.168.4.2:8081/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
-
-	<repositories>
-		<repository>
-			<id>nexus</id>
-			<name>Workdocx Artifact repository</name>
-			<url>http://192.168.4.2:8081/nexus/content/groups/public</url>
-		</repository>
-	</repositories>
 
 	<dependencies>
 	
@@ -81,7 +73,7 @@
 		<plugins>
 
 			<plugin>
-				<!-- This configures the build to use JVM 1.5 compliance: -->
+				<!-- JVM 1.6 compliance: -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.2</version>
