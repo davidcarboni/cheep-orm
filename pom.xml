@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>net.jirasystems</groupId>
+	<groupId>com.github.davidcarboni</groupId>
 	<artifactId>cheep-orm</artifactId>
 	<name>Cheep ORM</name>
 	<version>0.1.6</version>
@@ -19,9 +19,9 @@
 	</licenses>
 
 	<scm>
-		<url>https://github.com/davidcarboni/releaser</url>
-		<connection>scm:git:git://github.com/davidcarboni/releaser.git</connection>
-		<developerConnection>scm:git:git@github.com:davidcarboni/releaser.git</developerConnection>
+		<url>https://github.com/davidcarboni/cheep-orm</url>
+		<connection>scm:git:git://github.com/davidcarboni/cheep-orm.git</connection>
+		<developerConnection>scm:git:git@github.com:davidcarboni/cheep-org.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -167,22 +167,7 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.4.1</version>
 				<configuration>
-
-					<!-- Automated passphrase entry: -->
-
-					<!-- To pass your passphrase to the build automatically, so avoiding 
-						manual interaction, you'll need to put the passphrase into settings.xml. 
-						You don't really want that to be in plain text, so you'll want to follow: 
-						http://maven.apache.org/guides/mini/guide-encryption.html -->
-					<!-- <arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments> -->
-
-					<!-- Manual passphrase entry: -->
-
-					<!-- This is the simplest secure solution, but requires you to type 
-						your key passphrase in manually when performing a release. No biggie unless 
-						you want your CI server to decide when to release for you. -->
 					<mavenExecutorId>forked-path</mavenExecutorId>
-
 				</configuration>
 			</plugin>
 
