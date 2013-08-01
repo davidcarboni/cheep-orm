@@ -1,9 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.davidcarboni</groupId>
 	<artifactId>cheep-orm</artifactId>
 	<name>Cheep ORM</name>
-	<version>0.1.7</version>
+	<version>0.1.7-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<description>Object-row mapping with reflection.</description>
 	<url>https://github.com/davidcarboni/cheep-orm</url>
@@ -20,8 +21,8 @@
 	<scm>
 		<url>https://github.com/davidcarboni/cheep-orm</url>
 		<connection>scm:git:git://github.com/davidcarboni/cheep-orm.git</connection>
-		<developerConnection>scm:git:git@github.com:davidcarboni/cheep-orm.git</developerConnection>
-		<tag>cheep-orm-0.1.7</tag>
+		<developerConnection>scm:git:git@github.com:davidcarboni/cheep-org.git</developerConnection>
+		<tag>HEAD</tag>
 	</scm>
 
 	<properties>
