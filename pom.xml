@@ -20,7 +20,7 @@
 	<scm>
 		<url>https://github.com/davidcarboni/cheep-orm</url>
 		<connection>scm:git:git://github.com/davidcarboni/cheep-orm.git</connection>
-		<developerConnection>scm:git:git@github.com:davidcarboni/cheep-org.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:davidcarboni/cheep-orm.git</developerConnection>
 		<tag>cheep-orm-0.1.7</tag>
 	</scm>
 
