@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/davidcarboni/cheep-orm.png?branch=master)](https://travis-ci.org/davidcarboni/cheep-orm)
 Cheep ORM
 ----------
 
