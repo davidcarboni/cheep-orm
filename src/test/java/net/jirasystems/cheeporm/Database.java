@@ -9,6 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Properties;
 
+import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.lang.StringUtils;
 
 /**
@@ -162,9 +163,10 @@ public class Database {
 	 */
 	public static void afterTest(Connection connection) throws Exception {
 		if (useTransaction) {
-			connection.rollback();
+			DbUtils.rollbackAndCloseQuietly(connection);
+		} else {
+			DbUtils.closeQuietly(connection);
 		}
-		connection.close();
 	}
 
 }
