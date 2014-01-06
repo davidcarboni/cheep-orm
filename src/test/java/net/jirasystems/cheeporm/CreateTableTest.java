@@ -68,7 +68,8 @@ public class CreateTableTest {
 
 	/**
 	 * Test method for
-	 * {@link net.jirasystems.cheeporm.CreateTable#createStatement(java.lang.Object)} .
+	 * {@link net.jirasystems.cheeporm.CreateTable#createStatement(java.lang.Object)}
+	 * .
 	 */
 	@Test
 	public void testCreateStatement() {
@@ -102,6 +103,7 @@ public class CreateTableTest {
 	public void testCreateTable() throws SQLException {
 
 		// Given
+		Database.dropTableIfExists(bean, connection);
 		CreateTable createTable = new CreateTable();
 		Orm<ExampleBean> orm = new Orm<ExampleBean>(connection);
 
@@ -119,7 +121,8 @@ public class CreateTableTest {
 			Object expected = reflection.getFieldValue(field, bean);
 			Object actual = reflection.getFieldValue(field, readBack);
 			// Round down Timestamp fields as MySQL doesn't store milliseconds:
-			if ((expected != null) && (actual != null) && (Timestamp.class.isAssignableFrom(field.getType()))) {
+			if ((expected != null) && (actual != null)
+					&& (Timestamp.class.isAssignableFrom(field.getType()))) {
 				expected = ((Timestamp) expected).getTime() / 1000;
 				actual = ((Timestamp) actual).getTime() / 1000;
 			}
@@ -128,7 +131,8 @@ public class CreateTableTest {
 	}
 
 	/**
-	 * Test method for {@link net.jirasystems.cheeporm.CreateTable#getReflection()} and
+	 * Test method for
+	 * {@link net.jirasystems.cheeporm.CreateTable#getReflection()} and
 	 * {@link net.jirasystems.cheeporm.CreateTable#setReflection(net.jirasystems.cheeporm.Reflection)}
 	 * .
 	 */

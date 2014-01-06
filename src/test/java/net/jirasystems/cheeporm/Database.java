@@ -169,4 +169,20 @@ public class Database {
 		}
 	}
 
+	public static void dropTableIfExists(Object bean, Connection connection)
+			throws SQLException {
+
+		// Drop the table if it exists
+
+		String table = reflection.getTable(bean);
+		String dropTable = "drop table if exists " + table;
+		PreparedStatement dropTableStatement = connection
+				.prepareStatement(dropTable);
+		try {
+			dropTableStatement.execute();
+		} finally {
+			dropTableStatement.close();
+		}
+	}
+
 }
