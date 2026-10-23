@@ -11,7 +11,7 @@ import javax.persistence.Column;
 import net.jirasystems.cheeporm.Reflection;
 import net.jirasystems.cheeporm.SqlType;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * SQL definition for a column.

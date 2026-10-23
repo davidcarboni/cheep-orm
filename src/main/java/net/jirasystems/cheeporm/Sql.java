@@ -8,7 +8,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * @author david

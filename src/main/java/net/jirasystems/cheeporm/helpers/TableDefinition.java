@@ -6,7 +6,7 @@ import java.util.List;
 
 import net.jirasystems.cheeporm.Reflection;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * SQL definition of a table.

@@ -6,7 +6,7 @@
 //
 // import net.jirasystems.cheeporm.Reflection;
 //
-// import org.apache.commons.lang.StringUtils;
+// import org.apache.commons.lang3.StringUtils;
 //
 // public class FieldDefinitionMysql extends FieldDefinition {
 //
